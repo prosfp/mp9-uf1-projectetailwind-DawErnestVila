@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS with Parcel</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body>
+    <nav
+      class="flex flex-row justify-between items-center bg-slate-600 text-white h-16"
+    >
+      <div class="left ml-8"><a href="index.html">Logo</a></div>
+      <div class="right">
+        <ul class="sm:flex sm:justify-between sm:items-center sm:p-8 hidden">
+          <li class="mx-4">
+            <a href="cars.html">Cars</a>
+          </li>
+          <li class="mx-4">
+            <a href="about.html">About</a>
+          </li>
+          <li class="mx-4">
+            <a href="links.html">Links</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="mt-20"></main>
+  </body>
+</html>
