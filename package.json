@@ -2,7 +2,6 @@
   "name": "tailwind-parcel-project",
   "version": "1.0.0",
   "description": "Projecte que utilitza Tailwind CSS i Parcel",
-  "main": "src/index.js",
   "scripts": {
     "dev": "parcel src/index.html && parcel src/index.html --open",
     "build": "parcel build src/index.html"
