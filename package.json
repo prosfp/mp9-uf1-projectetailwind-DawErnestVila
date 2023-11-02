@@ -4,7 +4,7 @@
   "description": "Projecte que utilitza Tailwind CSS i Parcel",
   "scripts": {
     "dev": "parcel src/index.html && parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "keywords": [
     "tailwind",
