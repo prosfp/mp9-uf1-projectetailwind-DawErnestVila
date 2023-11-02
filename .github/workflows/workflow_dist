@@ -1,0 +1,29 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # replace with your default branch if not master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'  # replace with your Node.js version
+
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build  # replace with your build command if not `npm run build`
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: main  # replace with your target branch for GitHub Pages
+          folder: dist  # replace with your build folder if not `dist`
